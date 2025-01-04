@@ -6,13 +6,31 @@
 	objectVersion = 77;
 	objects = {
 
+/* Begin PBXBuildFile section */
+		4378FFC72D1792DD00A3D8F2 /* CoreBluetooth.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4378FFC62D1792DD00A3D8F2 /* CoreBluetooth.framework */; };
+/* End PBXBuildFile section */
+
 /* Begin PBXFileReference section */
 		4378FFB22D178FED00A3D8F2 /* BluetoothConnectApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BluetoothConnectApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		4378FFC62D1792DD00A3D8F2 /* CoreBluetooth.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreBluetooth.framework; path = System/Library/Frameworks/CoreBluetooth.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
+
+/* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
+		4378FFC42D17916000A3D8F2 /* Exceptions for "BluetoothConnectApp" folder in "BluetoothConnectApp" target */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			membershipExceptions = (
+				Info.plist,
+			);
+			target = 4378FFB12D178FED00A3D8F2 /* BluetoothConnectApp */;
+		};
+/* End PBXFileSystemSynchronizedBuildFileExceptionSet section */
 
 /* Begin PBXFileSystemSynchronizedRootGroup section */
 		4378FFB42D178FED00A3D8F2 /* BluetoothConnectApp */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
+			exceptions = (
+				4378FFC42D17916000A3D8F2 /* Exceptions for "BluetoothConnectApp" folder in "BluetoothConnectApp" target */,
+			);
 			path = BluetoothConnectApp;
 			sourceTree = "<group>";
 		};
@@ -23,6 +41,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4378FFC72D1792DD00A3D8F2 /* CoreBluetooth.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -33,6 +52,7 @@
 			isa = PBXGroup;
 			children = (
 				4378FFB42D178FED00A3D8F2 /* BluetoothConnectApp */,
+				4378FFC52D1792DD00A3D8F2 /* Frameworks */,
 				4378FFB32D178FED00A3D8F2 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -43,6 +63,14 @@
 				4378FFB22D178FED00A3D8F2 /* BluetoothConnectApp.app */,
 			);
 			name = Products;
+			sourceTree = "<group>";
+		};
+		4378FFC52D1792DD00A3D8F2 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				4378FFC62D1792DD00A3D8F2 /* CoreBluetooth.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -255,11 +283,13 @@
 				DEVELOPMENT_TEAM = KWLVUZYP38;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = BluetoothConnectApp/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 18.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -284,11 +314,13 @@
 				DEVELOPMENT_TEAM = KWLVUZYP38;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = BluetoothConnectApp/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 18.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
